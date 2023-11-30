@@ -1,0 +1,36 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování Identifikátorů
+- Třídy: `Evidence`, `Main`, `Pojisteny`, a `Rozhrani` jsou vhodně pojmenované a odpovídají svému obsahu.
+- Proměnné: `seznamPojistencu` v `Evidence.java` je smysluplně pojmenovaná. Nicméně, pojmenování parametrů a metod (např. `pridej`, `vypis`, `vyhledat`) by mohlo být více deskriptivní, třeba pridejPojistence atp. Proč je jedno z těch názvů v neurčitku, zatímco zbylé v rozkazovacím způsobu?
+
+2. Dodržení Principů SRP a SoC
+- SRP (Single Responsibility Principle): Třídy zdají se být zaměřeny na jednu zodpovědnost, což je dobré. `Evidence` spravuje pojištěnce, `Pojisteny` uchovává informace o pojištěném, `Rozhrani` řeší uživatelské rozhraní.
+- SoC (Separation of Concerns): Třída `Evidence` kombinuje správu dat s interakcí s uživatelem (načítání vstupů), což porušuje tento princip. Ideálně by měla být čtení vstupů odděleno od logiky správy dat.
+
+3. Vhodné Výběry Datových Typů
+- Použití `String` pro telefonní číslo je správné, jelikož telefonní čísla mohou obsahovat vůdčí nuly a další netradiční formáty.
+- Použití `int` pro věk je vhodné.
+
+4. Formátování Kódu
+- Formátování je konzistentní a přehledné, což je pozitivní. Přesto by bylo vhodné používat anglické názvy a dodržovat Java konvence (např. metody by měly začínat malým písmenem).
+- Proč ta mezera mezi názvem metody a závorkami? Např. Uvodnik ()
+
+5. Minimalizace Duplicitního Kódu
+- Kód neobsahuje výrazné duplikace. 
+
+6. Validace Vstupních Dat
+- V kódu chybí ošetření neočekávaných vstupů. Například, věk by měl být validován na kladné číslo a telefonní číslo by mělo být kontrolováno na platný formát.
+
+7. Logičnost a Složitost Algoritmů
+- Algoritmy jsou přiměřeně složité a logické pro úroveň junior programátora.
+
+8. Komentáře
+- Komentáře jsou přítomné
+
+9. Celkové Hodnocení
+- Kód je dobře strukturovaný a sleduje základní požadavky úlohy.
+- Doporučuje se vylepšit pojmenování, rozdělení zodpovědností mezi třídami, a přidat validaci vstupů.
+- Pro junior programátora je to solidní výkon, ale existuje prostor pro zlepšení v některých oblastech, zejména v oblasti principů návrhových vzorů a validace vstupů.
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
